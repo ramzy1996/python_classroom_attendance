@@ -18,12 +18,14 @@ def selectedStudentAttendance():
         sql1 = "SELECT fname, lname, mobile,email from students where student_no = "+student_no+""
         res1.execute(sql1)
         result1 = res1.fetchall()
-        print("\n")
+        print("")
+        # print("\n")
         print("First Name    -> ", result1[0][0])
         print("Last Name     -> ", result1[0][1])
         print("Mobile Number -> ", result1[0][2])
         print("Email         -> ", result1[0][3])
-        print("\n")
+        print("")
+        # print("\n")
         print(tabulate(result, headers=[
             "DATE", "ATTENDANCE"]))
     else:
