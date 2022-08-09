@@ -25,7 +25,7 @@ def update():
             sql = "UPDATE students set fname=%s where student_no=%s"
             cur.execute(sql, (fname, student_no))
             con.commit()
-            fetchAllData(False)
+            fetchAllData()
             print("\n")
             print("Update Successfully")
         elif option == 2:
@@ -42,7 +42,7 @@ def update():
             sql = "UPDATE students set lname=%s where student_no=%s"
             cur.execute(sql, (lname, student_no))
             con.commit()
-            fetchAllData(False)
+            fetchAllData()
             print("\n")
             print("Update Successfully")
         elif option == 3:
@@ -59,7 +59,7 @@ def update():
             sql = "UPDATE students set mobile=%s where student_no=%s"
             cur.execute(sql, (mobile, student_no))
             con.commit()
-            fetchAllData(False)
+            fetchAllData()
             print("\n")
             print("Update Successfully")
         elif option == 4:
@@ -76,7 +76,7 @@ def update():
             sql = "UPDATE students set email=%s where student_no=%s"
             cur.execute(sql, (email, student_no))
             con.commit()
-            fetchAllData(False)
+            fetchAllData()
             print("\n")
             print("Update Successfully")
         else:
